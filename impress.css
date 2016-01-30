@@ -1,0 +1,344 @@
+*{
+    margin:0;
+    padding: 0;
+}
+#header{
+    background: #DFE2DB;
+    height: 100px;
+    border-top: 5px solid #191919;
+    
+}
+#header_panel{
+    width: 1200px;
+    margin: auto;
+
+}
+
+.site_name{
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    float: left;
+    margin-top: 60px;
+  font-family: 'Poiret One', cursive;
+}
+
+.top_menu{
+    float: right;
+}
+.top_menu ul li{
+    float: left;
+    display: block;
+    background: #191919;
+    padding: 10px;
+   font-family: 'Poiret One', cursive;
+
+}
+.top_menu ul li:hover{
+    cursor:hand;
+	color: #191919;
+	background-color:#FBEE51;
+
+}
+.top_menu ul li a{
+    color:#fff;
+    text-decoration: none;
+}
+.top_menu ul li a:hover{
+	color:#191919;
+	background-color: #FEEB51;
+}
+.menu_highlight{
+background:#FEEB51 !important;
+	color: #191919 !important;
+}
+#menu-portfolio-overview{
+	background-color:#FEEB51;
+	color: #191919;
+}
+#footer{
+    background: #FEEB51 !important;
+    height: 100px;	
+}
+body > div.hint{
+	background:FEEB51 !important;
+}
+body{
+    overflow: hidden !important;
+	font-family: 'Poiret One', cursive;
+}
+
+
+.slide{
+    color: #395B91;
+    font-weight:bold;
+    width:500px;
+font-family: 'Poiret One', cursive;
+    height:200px;
+    text-align:left;
+}
+h2{
+    margin: 20px;
+	font-family: 'Poiret One', cursive;
+}
+#impress{
+
+    height: 650px;
+    position: relative;
+    width: auto;
+
+}
+#wrap{
+    min-height: 400px;
+    margin: 20px auto;
+    overflow: hidden;
+    position: relative;
+    width: 960px;
+}
+
+.step {
+    width: 1200px;
+    height: 600px;
+    display: block;
+    transition: opacity 1s;
+}
+
+
+#about_intro{
+    width: 1100px;
+    float: left;
+    text-align: center;
+    margin-top: 60px;
+    color: #191919;
+   font-family: 'Poiret One', cursive;
+    font-size: 72px;
+    font-weight: bold;
+}
+
+
+
+#about_intro .title2 img{
+ width:230px;
+ height: 230px;
+ border-radius:100%;
+ border: 10px solid  #191919;
+	font-family: 'Poiret One', cursive;
+
+}
+
+#about_image{
+    float: left;
+}
+
+#about_image img{
+    height: 400px;
+}
+
+#about{
+    height: 500px;
+}
+
+.intro-title{
+    font-size: 68px;
+    margin: 250px 0;
+    color:#000;
+    font-weight: bold;
+    text-align: center;
+   font-family: 'Poiret One', cursive;
+}
+
+.past .intro-title{
+    opacity:0.1;
+}
+.future .intro-title{
+    opacity:0.1;
+}
+.active .intro-title{
+    opacity:1;
+    text-transform: uppercase;
+}
+
+.portfolio{
+    background: #DFE2DB;
+    height: 500px;
+    margin: 10px 20px;
+    width: 1100px;
+	
+
+}
+
+.portfolio .small{
+    display: none;
+}
+
+.portfolio-left{
+    width: 650px;
+    float: left;
+    padding-top: 10px;
+    
+}
+.portfolio-left img{
+    border:10px solid #FFF;
+    outline: 2px solid #cfcfcf;
+    margin: 20px;
+}
+.portfolio-right{
+    width:400px;
+    float: left;
+    margin: 40px 20px;
+}
+
+.project-title{
+border-bottom: 5px solid #191919;
+    color: #000000;
+font-family: 'Poiret One', cursive;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.project-site{
+
+}
+
+.project-desc{
+font-size: 18px;
+color:#4B4A4A;
+text-algin: justify;
+	padding-right: 10%;
+	margin-top:2%;
+	margin-right: 20%;
+}
+ 
+.timeline{
+ 
+}
+ 
+.timeline-panel{
+    background: none repeat scroll 0 0 #191919;
+
+    height: 500px;
+    margin: 50px 10px;
+    width: 295px;
+    color: #fff;
+    text-align: center;
+    float: left;
+    border-right: 5px solid  #DFE2DB;
+}
+
+.timeline .date{
+    background: none repeat scroll 0 0 #FEEB51;
+	color: #191919;
+    font-size: 60px;
+    font-weight: bold;
+    margin: 40px 40px 0;
+    padding: 10px;
+    border: 3px solid #fff;
+    
+}
+.timeline .month{
+    background: none repeat scroll 0 0 #191919;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+
+}
+.timeline .year{
+    background: none repeat scroll 0 0 #FEEB51;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+	color:#191919; 
+
+}
+
+#timeline_tracker{
+    width: 960px;
+    margin: auto;
+    text-align: center;
+    height: 100px;
+}
+#timeline_tracker span{
+    width: 100px;
+    padding: 10px;
+    background: #eee;
+    margin: 5px;
+}
+
+.year-highlight{
+    background: #DFE2DB !important;
+}
+
+.services{
+     background: none repeat scroll 0 0 #DFE2DB;
+    border: 10px solid #191919;
+    height: 400px;
+    width: 800px;
+}
+#services-overview > div > p{
+	color:#191919;
+}
+.service-desc{
+    margin: 150px auto;
+    font-size: 50px;
+font-family: 'Poiret One', cursive;
+    color: #191919;
+    text-align: center;
+    font-weight: bold;
+}
+
+#portfolio-overview{
+    width:1200px;
+}
+
+#services-overview .title{
+    font-size: 100px;
+    margin: 150px 10px;
+    width:1200px;
+    text-align: center;
+}
+
+#services-overview .title .line1{
+    font-size: 100px;
+font-family: 'Poiret One', cursive;
+
+}
+#services-overview .title .line2{
+    font-size: 50px;
+    font-family: 'Poiret One', cursive;
+
+}
+
+
+
+.hint{
+    background: none repeat scroll 0 0 rgba(207, 65, 65, 0.898);
+    border-top: 3px solid #F8F8F8;
+    bottom: 0;
+    color: #FCFCFC;
+    display: none;
+  font-family: 'Poiret One', cursive;
+    font-size: 50px;
+    left: 0;
+    opacity: 0;
+    outline: 1px solid #EEEEEE;
+    padding: 20px;
+    position: fixed;
+    right: 0;
+    text-align: center;
+    transform: translateY(400px);
+    transition: opacity 1s ease 0s, transform 0.5s ease 1s;
+    z-index: 100;
+}
+
+.impress-enabled .hint {
+    display: block;
+}
+
+
+.impress-on-about .hint {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: opacity 1s ease 1s, transform 0.5s ease 1s;
+}
+

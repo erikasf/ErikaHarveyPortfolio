@@ -797,10 +797,64 @@ var initStep = function ( el, idx ) {
         
 })(document, window);
 
-// THAT'S ALL FOLKS!
-//
-// Thanks for reading it all.
-// Or thanks for scrolling down and reading the last part.
-//
-// I've learnt a lot when building impress.js and I hope this code and comments
-// will help somebody learn at least some part of it.
+            document.addEventListener("impress:stepenter", function (event) {
+                $("#timeline_tracker").hide();
+                $("#timeline_tracker span").removeClass("year-highlight");
+
+
+                var data_type = $(".active").attr("data-type");
+                if(data_type == 'portfolio'){
+                    $(".active .small").show();
+                    $(".active .large").hide();
+                }else if(data_type == 'portfolio-gallery'){
+                    $(".small").hide();
+                    $(".large").show();
+                }else if(data_type == 'timeline'){
+                    $("#timeline_tracker").show();
+                    var data_year = $(".active").attr("data-year");
+                    $("#nav-"+data_year).addClass("year-highlight");
+                }
+
+
+            }, false);
+
+            document.addEventListener("impress:stepenter", function (event) {
+                var data_id = $(".active").attr("id");
+                if(data_id == 'about'){
+                    $("li").removeClass("menu_highlight");
+                    $("#menu-about").addClass("menu_highlight");
+                }else if(data_id == 'portfolio-overview'){
+                    $("li").removeClass("menu_highlight");
+                    $("#menu-portfolio-overview").addClass("menu_highlight");
+                }else if(data_id == 'timeline-start'){
+                    $("li").removeClass("menu_highlight");
+                    $("#menu-timeline-start").addClass("menu_highlight");
+                }else if(data_id == 'services-overview'){
+                    $("li").removeClass("menu_highlight");
+                    $("#menu-services-overview").addClass("menu_highlight");
+                }
+            }, false);
+
+
+            $(document).ready(function(){
+
+                var timeline_years=[];
+                $(".timeline").each(function(){
+                    var year = $(this).attr("data-year");
+                    if(($.inArray(year, timeline_years)) == -1){
+                        timeline_years.push(year);
+                        $("#timeline_tracker").append("<span id='nav-"+year+"' data-year='"+year+"'>"+year+"</span>");
+                    }
+                });
+
+                $("body").on("click", "#timeline_tracker span", function(){
+                    var year = $(this).attr("data-year");
+                    var start_step = $(".str-"+year).attr("id");
+                    api.goto(start_step);
+                });
+
+                
+            });
+
+
+
